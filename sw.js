@@ -1,12 +1,12 @@
-const CACHE = "mantenia-pwa-v1";
+const CACHE = "mantenia-pwa-v2";
+
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./icon-192.png",
+  "./icon-512.png"
 ];
-
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE)
